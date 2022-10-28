@@ -4,18 +4,24 @@
 // 7 -> да
 // 1 -> нет
 
-Console.WriteLine("Ввведите цифру, обозначающую день недели:");
-int dayNumber = int.Parse(Console.ReadLine());
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Ввведите цифру, обозначающую день недели:");
+        int dayNumber = int.Parse(Console.ReadLine());
 
-if (dayNumber == 6 || dayNumber == 7)
-{
-    Console.WriteLine("Это выходной день недели");
-}
-else if (dayNumber >= 1 && dayNumber <= 5)
-{
-    Console.WriteLine("Это не выходной день недели");
-}
-else
-{
-    Console.WriteLine("Это не день недели");
+        if (dayNumber == 6 || dayNumber == 7)
+        {
+            Console.WriteLine("Это выходной день недели");
+        }
+        else if (dayNumber >= 1 && dayNumber <= 5)
+        {
+            Console.WriteLine("Это не выходной день недели");
+        }
+        else
+        {
+            Console.WriteLine("Это не день недели");
+        }
+    }
 }
